@@ -1,0 +1,2 @@
+sspi.c:19:16:sspi_r	24	static
+sspi.c:39:13:sspi_receive	32	static

@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"datt\startup_stm32f103x6.o"
+"datt\mcp3553.o"
+"datt\pid.o"
+"datt\pressurereceive.o"
+"datt\sspi.o"
+"datt\main.o"
+"datt\stm32f1xx_it.o"
+"datt\stm32f1xx_hal_msp.o"
+"datt\stm32f1xx_hal_gpio_ex.o"
+"datt\stm32f1xx_hal_tim.o"
+"datt\stm32f1xx_hal_tim_ex.o"
+"datt\stm32f1xx_hal.o"
+"datt\stm32f1xx_hal_rcc.o"
+"datt\stm32f1xx_hal_rcc_ex.o"
+"datt\stm32f1xx_hal_gpio.o"
+"datt\stm32f1xx_hal_dma.o"
+"datt\stm32f1xx_hal_cortex.o"
+"datt\stm32f1xx_hal_pwr.o"
+"datt\stm32f1xx_hal_flash.o"
+"datt\stm32f1xx_hal_flash_ex.o"
+"datt\stm32f1xx_hal_exti.o"
+"datt\stm32f1xx_hal_uart.o"
+"datt\system_stm32f1xx_1.o"
+--library_type=microlib --strict --scatter "DATT\DATT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DATT.map" -o DATT\DATT.axf
